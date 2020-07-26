@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -32,7 +33,6 @@
     #fafa5e77 0%,
     #fafa5e77 100%
   );
-  font-family: "Poppins", sans-serif;
 }
 
 .searchbar {
@@ -95,11 +95,7 @@
 
 .container {
   text-transform: uppercase;
-  padding-top: 3px;
-}
-
-h1 {
-  font-weight: bold;
+  padding-top: 2px;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -109,3 +105,251 @@ h1 {
 .custom-toggler.navbar-toggler {
   border-color: rgb(0, 0, 0);
 }
+.nav-item a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.container a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-section {
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.center-div {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+  border: 1px solid;
+  color: white;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  font: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.header-buttons a:hover {
+  color: #50d1c0;
+  background: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+ /* Size Card Styles */
+ h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .size-cards-wrapper {
+    position: relative;
+    height: 100%;
+    overflow: visible;
+  }
+  
+  .size-cards {
+    height: 375px;
+    overflow: hidden;
+    padding: 1rem 0;
+  }
+  
+  .size-cards .card {
+    background-color: #fff;
+    border: 1px solid #363537;
+    border-radius: 5px;
+  }
+  
+  .size-cards input[type="radio"] {
+    display: none;
+  }
+  
+  .size-cards [id^="card"]:checked + .slide {
+    z-index: 100;
+    display: block;
+  }
+  
+  .size-cards .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+  
+  .size-cards .slide .card {
+    position: relative;
+    width: 240px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .size-cards .slide .card .size,
+  .size-cards .slide .card .yard {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: #ccc 2px 2px 5px;
+    color: #ffa13e;
+  }
+  
+  .size-cards .slide .card .size {
+    font-size: 3.750rem;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  
+  .size-cards .slide .card .yard {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+  
+  .size-cards .slide .card .product {
+    display: block;
+    margin: 1rem auto;
+    border: 1px solid #363537;
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #363537;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .size-cards .slide .card .pricing.button {
+    margin: 1rem 0 0 0;
+    background-color: #ff6f59;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* indicator squares */
+  
+  .size-cards .squares {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+  }
+  
+  .size-cards .squares li {
+    display: inline-block;
+    padding: 0 0.125rem;
+  }
+  
+  .size-cards .squares li label {
+    background-color: #ff6f59;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.75rem;
+    width: 55px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 5%;
+    position: relative;
+  }
+  
+  
+  
+  
+  /* Medium only */
+  
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .size-cards .slide .card {
+      width: 270px;
+    }
+    .size-cards .slide .card .prev-card {
+      left: -74px;
+    }
+    .size-cards .slide .card .next-card {
+      right: -74px;
+    }
+  }
+  
+  
+  /* Large and up */
+  
+  @media screen and (min-width: 64em) {
+    .size-cards {
+      height: auto;
+    }
+    .size-cards h1,
+    .size-cards h2,
+    .size-cards h3,
+    .size-cards h4,
+    .size-cards h5,
+    .size-cards h6,
+    .size-cards .sh-accent {
+      font-size: 1.25rem;
+    }
+    .size-cards .slide {
+      display: block;
+      position: relative;
+      /* Card Hover Styles */
+    }
+    .size-cards .slide .card {
+      padding: 0.5rem;
+      width: auto;
+    }
+    .size-cards .slide .card .size {
+      margin-top: 1rem;
+    }
+    
+    
+   
+    .size-cards .slide .card .card-info {
+      position: relative;
+    }
+    .size-cards .slide .card .card-info ul {
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin-bottom: 0;
+      opacity: 1;
+      font-family: 'Roboto Condensed', sans-serif;
+      text-transform: uppercase;
+    }
+    .size-cards .slide .card .card-info ul li {
+      font-size: 0.75rem;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #363537;
+    }
+  
+    .size-cards .slide .card:hover,
+    .size-cards .slide .card:hover.card-active {
+      border: 1px solid #d63043;
+    }
+    .size-cards .slide .card:hover > .size,
+    .size-cards .slide .card:hover.card-active > .size {
+      color: #d63043;
+    }

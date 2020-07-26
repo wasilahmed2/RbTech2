@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <link
       rel="stylesheet"
@@ -23,11 +24,24 @@
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     />
     <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles/production/main.min.css" />
+    <script src="https://use.fontawesome.com/ca5187534d.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:700"
+      rel="stylesheet"
+    />
+
     <title>RB Tech</title>
   </head>
   <body>
     <div class="header" id="topheader">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">RB Tech & Games</a>
           <button
@@ -83,6 +97,152 @@
             <a href="#">Retail Shop</a> <a href="#">Order Online</a>
           </div>
         </div>
+      </section>
+
+      <section class="pc-builds">
+        <div class="size-cards spline">
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="line show-for-large">
+                <h1 class="section-heading sh-light text-center">
+                  Product Cards
+                </h1>
+                <p class="text-center">
+                  Cards are displayed in a slider on mobile devices, and then
+                  expand into a four column layout on larger displays
+                </p>
+              </div>
+
+              <div class="row small-up-1 large-up-4 size-cards-wrapper">
+                <input id="card-slide-1" type="radio" name="cards" checked />
+                <div class="column slide">
+                  <div class="card text-center">
+                    <p class="size">Casing</p>
+
+                    <div class="product text-center">Product Image</div>
+                    <div class="card-info show-for-large">
+                      <ul class="no-bullet">
+                        Perfect for:
+                        <li>Attic &amp; Garage Cleanouts</li>
+                        <li>Dirt &amp; Concrete Removal</li>
+                        <li>Small Property Cleanups</li>
+                      </ul>
+                    </div>
+                    <div class="card-buttons">
+                      <a
+                        class="pricing button primary-button hide-for-large"
+                        href="tel:888-888-8888"
+                        >Call for Pricing</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end .slide -->
+
+                <input id="card-slide-2" type="radio" name="cards" />
+                <div class="column slide">
+                  <div class="card text-center">
+                    <p class="size">20</p>
+
+                    <div class="product text-center">Product Image</div>
+                    <div class="card-info show-for-large">
+                      <ul class="no-bullet">
+                        Perfect for:
+                        <li>Home Remodeling</li>
+                        <li>Roofing Projects</li>
+                        <li>Light Demolition Projects</li>
+                      </ul>
+                    </div>
+                    <div class="card-buttons">
+                      <a
+                        class="pricing button primary-button hide-for-large"
+                        href="tel:888-888-8888"
+                        >Call for Pricing</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end .slide -->
+
+                <input id="card-slide-3" type="radio" name="cards" />
+                <div class="column slide">
+                  <div class="card text-center">
+                    <p class="size">30</p>
+
+                    <div class="product text-center">Product Image</div>
+                    <div class="card-info show-for-large">
+                      <ul class="no-bullet">
+                        Perfect for:
+                        <li>Home Additions</li>
+                        <li>Multiple Room Remodels</li>
+                        <li>Home Renovations</li>
+                      </ul>
+                    </div>
+                    <div class="card-buttons">
+                      <a
+                        class="pricing button primary-button hide-for-large"
+                        href="tel:888-888-8888"
+                        >Call for Pricing</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end .slide -->
+
+                <input id="card-slide-4" type="radio" name="cards" />
+                <div class="column slide">
+                  <div class="card text-center">
+                    <p class="size">40</p>
+
+                    <div class="product text-center">Product Image</div>
+                    <div class="card-info show-for-large">
+                      <ul class="no-bullet">
+                        Perfect for:
+                        <li>Major Building Renovations</li>
+                        <li>Home Restoration Projects</li>
+                        <li>Large Construction Projects</li>
+                      </ul>
+                    </div>
+                    <div class="card-buttons">
+                      <a
+                        class="pricing button primary-button hide-for-large"
+                        href="tel:888-888-8888"
+                        >Call for Pricing</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end .slide -->
+
+                <ul class="no-bullet text-center hide-for-large squares">
+                  <li>
+                    <label class="current-size" for="card-slide-1" id="size-1"
+                      >10
+                    </label>
+                  </li>
+                  <li>
+                    <label class="current-size" for="card-slide-2" id="size-2"
+                      >20</label
+                    >
+                  </li>
+                  <li>
+                    <label class="current-size" for="card-slide-3" id="size-3"
+                      >30</label
+                    >
+                  </li>
+                  <li>
+                    <label class="current-size" for="card-slide-4" id="size-4"
+                      >40</label
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- end .wrapper -->
+            </div>
+          </div>
+        </div>
+
+        <script src="assets/js/production/production.min.js"></script>
       </section>
     </div>
   </body>
