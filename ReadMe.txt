@@ -18,7 +18,9 @@ The products page shows us the products that are available and if we hover on it
 Also if we click on the card we can see the price and a button to add to cart.
 
 //LoginPage : 
-It is a simple login page designed for customers to login but it isn't functional as no javascript is done in assesment 1.
+It is a simple login page designed for customers to login. You can login using credentials 
+username : admin , password : admin 
+And then click on login and it will take you to the homepage.
 
 Languages used :
 -HTML
