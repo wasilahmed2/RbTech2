@@ -1,4 +1,4 @@
-This is a basic frontpage for the website.
+This is a basic frontpage for the website. And it is completely resposive.
 I was creating a website for a computer retail shop named 'RB Tech & Games' in Hafeez Center as i work with them and this is the start of it.
 Created 3 pages which are the home page,product page and login page.
 
